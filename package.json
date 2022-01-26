@@ -6,10 +6,6 @@
     "name": "Himanshu Sharma",
     "url": "https://github.com/sh-himanshu"
   },
-  "repository": {
-    "type": "github",
-    "url": "https://github.com/sh-himanshu/bidirectional-infinite-scroll"
-  },
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
