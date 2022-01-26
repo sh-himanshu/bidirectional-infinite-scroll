@@ -12,13 +12,13 @@ const App = () => {
         Infinite Scroll
       </h1>
       <InfiniteScroll
-        onScrollTop={async () =>
-          setPhotos([newTopImg, newTopImg, ...photos].slice(0, 20))
+        onScrollTop={() =>
+          setPhotos([newTopImg, newTopImg, ...photos].slice(0, 30))
         }
-        onScrollBottom={async () =>
-          setPhotos([...photos, newBottomImg, newBottomImg].slice(-20))
+        onScrollBottom={() =>
+          setPhotos([...photos, newBottomImg, newBottomImg].slice(-30))
         }
-        className="bg-gray-100 h-[60vh]  w-[90vw] sm:w-96 rounded-lg shadow-md mt-10 overflow-y-auto hide-scrollbar"
+        className="bg-gray-100 h-[60vh]  w-[90vw] sm:w-96 rounded-lg shadow-md mt-10 overflow-y-auto hide-scrollbar scroll-smooth"
       >
         <div className="space-y-2 pt-2 pb-2 px-2">
           {photos.map((url, index) => (
